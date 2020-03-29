@@ -1,14 +1,15 @@
 package dev.hunghh;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-public class Pizza {
+public abstract class Pizza {
     protected String name;
     protected String dough;
     protected String sauce;
-    protected List<String> toppings;
+    protected List<String> toppings = new ArrayList<>();
 
     public void prepare() {
         System.out.println("preparing " + name);
